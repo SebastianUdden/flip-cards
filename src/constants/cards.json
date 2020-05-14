@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Tip 1",
+    "description": "Care about your craft"
+  },
+  {
+    "title": "Tip 2",
+    "description": "THINK! about your work"
+  },
+  {
+    "title": "Tip 3",
+    "description": "Provide options, not lame excuses"
+  },
+  {
+    "title": "Tip 4",
+    "description": "Don't live with broken windows"
+  },
+  {
+    "title": "Tip 5",
+    "description": "Be a catalyst for change"
+  },
+  {
+    "title": "Tip 6",
+    "description": "Make quality part of your requirements"
+  },
+  {
+    "title": "Tip 7",
+    "description": "Remember the big picture"
+  },
+  {
+    "title": "Tip 8",
+    "description": "Invest regularily in your knowledge portfolio"
+  },
+  {
+    "title": "Tip 9",
+    "description": "Be critical about what you read and hear"
+  },
+  {
+    "title": "Tip 10",
+    "description": "It's not just what you say, but how you say it"
+  },
+  {
+    "title": "Tip 11",
+    "description": "Keep it DRY"
+  },
+  {
+    "title": "Tip 12",
+    "description": "Make it easy to reuse"
+  },
+  {
+    "title": "Tip 13",
+    "description": "Eliminate effects between unrelated things"
+  },
+  {
+    "title": "Tip 14",
+    "description": "There are no final decisions"
+  },
+  {
+    "title": "Tip 15",
+    "description": "Use tracer bullets to find the target"
+  },
+  {
+    "title": "Tip 16",
+    "description": "Prototype to learn"
+  },
+  {
+    "title": "Tip 17",
+    "description": "Program close to the problem domain"
+  },
+  {
+    "title": "Tip 18",
+    "description": "Estimate to avoid surprises"
+  },
+  {
+    "title": "Tip 19",
+    "description": "Iterate the schedule with the code"
+  },
+  {
+    "title": "Tip 20",
+    "description": "Keep knowledge in plain text"
+  },
+  {
+    "title": "Tip 21",
+    "description": "Use the power of command shells"
+  },
+  {
+    "title": "Tip 22",
+    "description": "Use the single editor well"
+  },
+  {
+    "title": "Tip 23",
+    "description": "Always use source control"
+  },
+  {
+    "title": "Tip 24",
+    "description": "Fix the problem, not the blame"
+  },
+  {
+    "title": "Tip 25",
+    "description": "Don't panic when debugging"
+  },
+  {
+    "title": "Tip 26",
+    "description": "'select' isn't broken"
+  },
+  {
+    "title": "Tip 27",
+    "description": "Don't assume it, prove it"
+  },
+  {
+    "title": "Tip 28",
+    "description": "Learn a text manipulation language"
+  },
+  {
+    "title": "Tip 29",
+    "description": "Write code that writes code"
+  },
+  {
+    "title": "Tip 30",
+    "description": "You can't write perfect software"
+  },
+  {
+    "title": "Tip 31",
+    "description": "Design with contracts"
+  },
+  {
+    "title": "Tip 32",
+    "description": "Crash early"
+  },
+  {
+    "title": "Tip 33",
+    "description": "Use assertions to prevent the impossible"
+  },
+  {
+    "title": "Tip 34",
+    "description": "Use exceptions for exceptional problems"
+  },
+  {
+    "title": "Tip 35",
+    "description": "Finish what you start"
+  },
+  {
+    "title": "Tip 36",
+    "description": "Minimize coupling between modules"
+  },
+  {
+    "title": "Tip 37",
+    "description": "Configure, don't integrate"
+  },
+  {
+    "title": "Tip 38",
+    "description": "Put abstractions in code, details in meta-data"
+  },
+  {
+    "title": "Tip 39",
+    "description": "Analyze workflow to improve concurrency"
+  },
+  {
+    "title": "Tip 40",
+    "description": "Design using services"
+  },
+  {
+    "title": "Tip 41",
+    "description": "Always design for concurrency"
+  },
+  {
+    "title": "Tip 42",
+    "description": "Separate views from models"
+  },
+  {
+    "title": "Tip 43",
+    "description": "Use blackboards to coordinate workflow"
+  },
+  {
+    "title": "Tip 44",
+    "description": "Don't program by coincidence"
+  },
+  {
+    "title": "Tip 45",
+    "description": "Estimate the order of your algorithms"
+  },
+  {
+    "title": "Tip 46",
+    "description": "Test your estimates"
+  },
+  {
+    "title": "Tip 47",
+    "description": "Refactor early, refactor often"
+  },
+  {
+    "title": "Tip 48",
+    "description": "Design to test"
+  },
+  {
+    "title": "Tip 49",
+    "description": "Test your software, or your users will"
+  },
+  {
+    "title": "Tip 50",
+    "description": "Don't use wizard code you don't understand"
+  },
+  {
+    "title": "Tip 51",
+    "description": "Don't gather requirements, dig for them"
+  },
+  {
+    "title": "Tip 52",
+    "description": "Work with a user to think like a user"
+  },
+  {
+    "title": "Tip 53",
+    "description": "Abstractions live longer than details"
+  },
+  {
+    "title": "Tip 54",
+    "description": "Use a project glossary"
+  },
+  {
+    "title": "Tip 55",
+    "description": "Don't think outside the box, find the box"
+  },
+  {
+    "title": "Tip 56",
+    "description": "Start when you're ready"
+  },
+  {
+    "title": "Tip 57",
+    "description": "Some things are better done than described"
+  },
+  {
+    "title": "Tip 58",
+    "description": "Don't be a slave to formal methods"
+  },
+  {
+    "title": "Tip 59",
+    "description": "Costly tools don't produce better design"
+  },
+  {
+    "title": "Tip 60",
+    "description": "Organize teams around functionality"
+  },
+  {
+    "title": "Tip 61",
+    "description": "Don't use manual procedures"
+  },
+  {
+    "title": "Tip 62",
+    "description": "Test early, test often, test automatically"
+  },
+  {
+    "title": "Tip 63",
+    "description": "Coding ain't done 'til all the tests are run"
+  },
+  {
+    "title": "Tip 64",
+    "description": "Use saboteurs to test your testing"
+  },
+  {
+    "title": "Tip 65",
+    "description": "Test state coverage, not code coverage"
+  },
+  {
+    "title": "Tip 66",
+    "description": "Find bugs once"
+  },
+  {
+    "title": "Tip 67",
+    "description": "English is just a programming language"
+  },
+  {
+    "title": "Tip 68",
+    "description": "Build documentation in, don't bolt it on"
+  },
+  {
+    "title": "Tip 69",
+    "description": "Gently exceed your users expectations"
+  },
+  {
+    "title": "Tip 70",
+    "description": "Sign your work"
+  }
+]
