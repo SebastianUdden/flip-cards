@@ -4,8 +4,8 @@ import styled from "styled-components"
 const Common = styled.div`
   position: absolute;
   top: 0;
-  padding: 1rem;
-  width: 93%;
+  padding: 1rem 0;
+  width: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -47,7 +47,7 @@ const Back = styled(Common)`
 const Hidden = styled.div`
   padding: 1rem;
   margin: 1rem 0;
-  width: 93%;
+  width: 100%;
   visibility: hidden;
 `
 
