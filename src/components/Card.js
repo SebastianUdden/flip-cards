@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  margin: 1rem 0;
-  padding: 2rem;
+  margin: 0.5rem 0;
+  padding: 1.2rem;
   width: 100%;
   background-color: #deeefe;
   color: #222;
@@ -19,8 +19,10 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-const Title = styled.h2`
+const Title = styled.p`
   margin: 0;
+  font-weight: 800;
+  font-size: ${p => (27 - p.lvl * 2 > 14 ? 26 - p.lvl * 2 : 14) || 27}px;
   ${p =>
     !p.isTest &&
     `
@@ -37,8 +39,9 @@ const Description = styled.p`
   `}
 `
 
-export default ({ title, description, isTest }) => {
+export const Card = ({ title, description, isTest, cards, lvl }) => {
   const [flipCard, setFlipCard] = useState(false)
+
   useEffect(() => {
     if (isTest) return
     setFlipCard(false)
@@ -46,14 +49,23 @@ export default ({ title, description, isTest }) => {
 
   return (
     <Wrapper
-      onClick={() => {
+      onClick={e => {
+        e.stopPropagation()
         if (!isTest) return
         setFlipCard(!flipCard)
       }}
     >
-      {!flipCard && <Title isTest={isTest}>{title}</Title>}
+      {!flipCard && (
+        <Title isTest={isTest} lvl={lvl}>
+          {title}
+        </Title>
+      )}
       {(!isTest || flipCard) && (
-        <Description isTest={isTest}>{description}</Description>
+        <>
+          <Description isTest={isTest}>{description}</Description>
+          {cards &&
+            cards.map(card => <Card {...card} isTest={isTest} lvl={lvl + 1} />)}
+        </>
       )}
     </Wrapper>
   )

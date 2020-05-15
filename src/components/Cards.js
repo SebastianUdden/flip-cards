@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import Card from "./Card"
+import { Card } from "./Card"
 
 const Container = styled.div`
   margin: 1rem;
@@ -40,9 +40,7 @@ export default ({ cards }) => {
       </Heading>
       <hr></hr>
       <Cards>
-        {cards.map(card => (
-          <Card {...card} isTest={isTest} />
-        ))}
+        {cards && cards.map(card => <Card {...card} isTest={isTest} lvl={1} />)}
       </Cards>
     </Container>
   )
