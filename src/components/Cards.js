@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { Card } from "./Card"
+import FlashCard from "./FlashCard"
 
 const Container = styled.div`
   margin: 1rem;
@@ -35,8 +36,11 @@ export default ({ cards }) => {
   return (
     <Container>
       <Heading>
-        Flip-cards {isTest ? "test" : "study"}{" "}
-        <Button onClick={() => setIsTest(!isTest)}>Toggle</Button>
+        <span>SimplyFlashCards</span>{" "}
+        <span>
+          {isTest ? "Test" : "Study"}{" "}
+          <Button onClick={() => setIsTest(!isTest)}>Toggle</Button>
+        </span>
       </Heading>
       <hr></hr>
       <Cards>

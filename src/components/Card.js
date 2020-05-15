@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
+import FlashCard from "./FlashCard"
+import StudyCard from "./StudyCard"
 
 const Wrapper = styled.div`
   margin: 0.5rem 0;
@@ -40,33 +42,49 @@ const Description = styled.p`
 `
 
 export const Card = ({ title, description, isTest, cards, lvl }) => {
-  const [flipCard, setFlipCard] = useState(false)
+  const formatFlashCardData = () => {
+    const front = (
+      <Title isTest={isTest} lvl={lvl}>
+        {title}
+      </Title>
+    )
+    const back = (
+      <>
+        <Description isTest={isTest}>{description}</Description>
+        {cards &&
+          cards.map(card => <Card {...card} isTest={isTest} lvl={lvl + 1} />)}
+      </>
+    )
+    const flashCardData = {
+      front,
+      back,
+    }
+    return isTest ? (
+      <FlashCard {...flashCardData} />
+    ) : (
+      <StudyCard {...flashCardData} lvl={lvl} />
+    )
+  }
 
-  useEffect(() => {
-    if (isTest) return
-    setFlipCard(false)
-  }, [isTest])
-
-  return (
-    <Wrapper
-      onClick={e => {
-        e.stopPropagation()
-        if (!isTest) return
-        setFlipCard(!flipCard)
-      }}
-    >
-      {!flipCard && (
-        <Title isTest={isTest} lvl={lvl}>
-          {title}
-        </Title>
-      )}
-      {(!isTest || flipCard) && (
-        <>
-          <Description isTest={isTest}>{description}</Description>
-          {cards &&
-            cards.map(card => <Card {...card} isTest={isTest} lvl={lvl + 1} />)}
-        </>
-      )}
-    </Wrapper>
-  )
+  return formatFlashCardData()
+  // <Wrapper
+  //   onClick={e => {
+  //     e.stopPropagation()
+  //     if (!isTest) return
+  //     setFlipCard(!flipCard)
+  //   }}
+  // >
+  //   {!flipCard && (
+  //     <Title isTest={isTest} lvl={lvl}>
+  //       {title}
+  //     </Title>
+  //   )}
+  //   {(!isTest || flipCard) && (
+  //     <>
+  //       <Description isTest={isTest}>{description}</Description>
+  //       {cards &&
+  //         cards.map(card => <Card {...card} isTest={isTest} lvl={lvl + 1} />)}
+  //     </>
+  //   )}
+  // </Wrapper>
 }
