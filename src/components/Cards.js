@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { Card } from "./Card"
-import FlashCard from "./FlashCard"
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -33,9 +32,14 @@ const Cards = styled.div`
 `
 const Heading = styled.h1`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-size: 25px;
+`
+
+const Divider = styled.div`
+  margin: 0.5rem;
 `
 
 export default ({ cards }) => {
@@ -43,11 +47,11 @@ export default ({ cards }) => {
   return (
     <Container>
       <Heading>
-        <span>SimplyFlashCards</span>{" "}
-        <span>
+        <Divider>SimplyFlashCards</Divider>{" "}
+        <Divider>
           {isTest ? "Test" : "Study"}{" "}
           <Button onClick={() => setIsTest(!isTest)}>Toggle</Button>
-        </span>
+        </Divider>
       </Heading>
       <hr></hr>
       <Cards>

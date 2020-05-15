@@ -4,7 +4,7 @@ import FlashCard from "./FlashCard"
 import StudyCard from "./StudyCard"
 
 const Title = styled.p`
-  margin: 0;
+  margin: 0 0.5rem;
   font-weight: 800;
   font-size: ${p => (27 - p.lvl * 2 > 14 ? 26 - p.lvl * 2 : 14) || 27}px;
   ${p =>
@@ -15,7 +15,7 @@ const Title = styled.p`
   `}
 `
 const Description = styled.p`
-  margin: 0;
+  margin: 0 0.5rem;
   ${p =>
     !p.isTest &&
     `
