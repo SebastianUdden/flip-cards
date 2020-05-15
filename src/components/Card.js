@@ -22,13 +22,21 @@ const Description = styled.p`
     width: 100%;
   `}
 `
+const Image = styled.img`
+  max-width: 100%;
+`
 
-export const Card = ({ title, description, isTest, cards, lvl }) => {
+export const Card = ({ title, description, image, isTest, cards, lvl }) => {
   const formatFlashCardData = () => {
     const front = (
-      <Title isTest={isTest} lvl={lvl}>
-        {title}
-      </Title>
+      <>
+        {image && <Image src={image} alt={image} />}
+        {title && (
+          <Title isTest={isTest} lvl={lvl}>
+            {title}
+          </Title>
+        )}
+      </>
     )
     const back = (
       <>

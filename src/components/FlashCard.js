@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { defaultShadow } from "../constants/boxShadow"
 
 const Common = styled.div`
   position: absolute;
@@ -8,7 +9,7 @@ const Common = styled.div`
   width: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: ${defaultShadow};
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   :hover {
     cursor: pointer;

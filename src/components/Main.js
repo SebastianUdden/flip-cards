@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { Card } from "./Card"
+import Category from "./Category"
+import { defaultShadow, hoverShadow } from "../constants/boxShadow"
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -9,26 +10,24 @@ const Container = styled.div`
 `
 const Button = styled.button`
   border: none;
-  background-color: #222;
+  background-color: #2b9bcb;
   color: #eee;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   font-size: large;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: ${defaultShadow};
   :active {
     background-color: #000;
     color: #ddd;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: ${defaultShadow};
   }
   :hover {
     cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: ${hoverShadow};
   }
 `
-const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+const Label = styled.label`
+  font-size: 18px;
+  font-weight: 400;
 `
 const Heading = styled.h1`
   display: flex;
@@ -42,21 +41,30 @@ const Divider = styled.div`
   margin: 0.5rem;
 `
 
-export default ({ cards }) => {
+export default ({ categories }) => {
   const [isTest, setIsTest] = useState(true)
+  const [selected, setSelected] = useState("")
   return (
     <Container>
       <Heading>
         <Divider>SimplyFlashCards</Divider>{" "}
         <Divider>
-          {isTest ? "Test" : "Study"}{" "}
+          <Label>{isTest ? "Test" : "Study"}</Label>{" "}
           <Button onClick={() => setIsTest(!isTest)}>Toggle</Button>
         </Divider>
       </Heading>
-      <hr></hr>
-      <Cards>
-        {cards && cards.map(card => <Card {...card} isTest={isTest} lvl={1} />)}
-      </Cards>
+      {categories &&
+        categories.map(category => (
+          <>
+            <hr></hr>
+            <Category
+              {...category}
+              isTest={isTest}
+              selected={selected === category.title}
+              onSelect={title => setSelected(title)}
+            />
+          </>
+        ))}
     </Container>
   )
 }

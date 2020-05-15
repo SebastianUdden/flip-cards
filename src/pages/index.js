@@ -1,5 +1,5 @@
 import React from "react"
-import Cards from "../components/Cards"
+import Main from "../components/Main"
 import CARDS from "../constants/cards.json"
 
-export default () => <Cards cards={CARDS} />
+export default () => <Main categories={CARDS} />
