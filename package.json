@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "simply-flash-cards",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A simple flash-cards app for the modern web.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"No tests yet, will be added once out of prototyping phase!\" && exit 1"
   },
   "dependencies": {
     "gatsby": "^2.21.22",
@@ -21,12 +21,5 @@
   },
   "devDependencies": {
     "prettier": "2.0.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

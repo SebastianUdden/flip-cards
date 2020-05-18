@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { defaultShadow } from "../constants/boxShadow"
+import { defaultShadow } from "../../constants/boxShadow"
+import { primaryColor } from "../../constants/color"
 
 const Common = styled.div`
   position: absolute;
@@ -40,7 +41,7 @@ const Front = styled(Common)`
   color: black;
 `
 const Back = styled(Common)`
-  background-color: #2b9bcb;
+  background-color: ${primaryColor};
   color: white;
   transform: rotateY(180deg);
 `

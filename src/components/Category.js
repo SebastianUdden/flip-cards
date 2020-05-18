@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Card } from "./Card"
+import RandomCards from "./testCards/RandomCards"
 
 const Cards = styled.div`
   display: flex;
@@ -20,19 +21,24 @@ const Category = styled.h2`
   }
 `
 
-export default ({ title, cards, isTest, onSelect, selected }) => {
+export default ({ title, cards, mode, onSelect, selected }) => {
   return (
     <>
       {title && (
         <Category onClick={() => onSelect(selected ? "" : title)}>
           <span>{title}</span>
-          <span>{selected ? <>&#x2191;</> : <>&#x2193;</>}</span>
+          <span>{selected ? <>&times;</> : <>&#x2193;</>}</span>
         </Category>
       )}
-      {selected && (
+      {(mode === "Test" || mode === "Multi-choice") && selected && (
+        <RandomCards mode={mode} cards={cards.slice(0, 6)} />
+      )}
+      {mode !== "Test" && mode !== "Multi-choice" && selected && (
         <Cards>
           {cards &&
-            cards.map(card => <Card {...card} isTest={isTest} lvl={1} />)}
+            cards.map(card => (
+              <Card {...card} isTest={mode === "Memorize"} lvl={1} />
+            ))}
         </Cards>
       )}
     </>

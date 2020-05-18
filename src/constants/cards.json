@@ -1,24 +1,9 @@
 [
   {
-    "title": "Spanish food",
-    "cards": [
-      {
-        "image": "https://www.cookingclassy.com/wp-content/uploads/2019/02/quesadillas-2.jpg",
-        "cards": [
-          {
-            "title": "Quesadilla",
-            "description": "Cheese and chicken in a roll, put it in the oven. What's not to love?"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Pragmatic Programmer tips",
+    "title": "Pragmatic Programmer 1-10",
     "cards": [
       {
         "title": "Tip 1",
-        "description": "",
         "cards": [
           {
             "title": "Care about your craft",
@@ -106,7 +91,12 @@
             "description": "There's no point in having great ideas if you dont communicate them effectively."
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Pragmatic Programmer 11-20",
+    "cards": [
       {
         "title": "Tip 11",
         "cards": [
@@ -196,7 +186,12 @@
             "description": "Plain text won't become obsolete. It helps leverage your work and simplifies debugging and testing."
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Pragmatic Programmer 21-30",
+    "cards": [
       {
         "title": "Tip 21",
         "cards": [
@@ -246,7 +241,7 @@
         "title": "Tip 26",
         "cards": [
           {
-            "title": "select' isn't broken",
+            "title": "'select' isn't broken",
             "description": "It's rare to find a bug in the OS or the compiler, or even a third-party product or library. The bug is most likely in the application."
           }
         ]
@@ -286,7 +281,12 @@
             "description": "Software can't be perfect. Protect your code and users from the inevitable errors."
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Pragmatic Programmer 31-40",
+    "cards": [
       {
         "title": "Tip 31",
         "cards": [
@@ -376,7 +376,12 @@
             "description": "Design in terms of services - independent, concurrent objects behind well-defined, consistent interfaces."
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Pragmatic Programmer 41-50",
+    "cards": [
       {
         "title": "Tip 41",
         "cards": [
@@ -466,7 +471,12 @@
             "description": "Wizards can generate reams of code. Make sure you understand all of it before you incorporate it into your project."
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Pragmatic Programmer 51-60",
+    "cards": [
       {
         "title": "Tip 51",
         "cards": [
@@ -556,7 +566,12 @@
             "description": "Don't separate designers from coders, testers from data modelers. Build teams the way you build code."
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Pragmatic Programmer 61-70",
+    "cards": [
       {
         "title": "Tip 61",
         "cards": [
@@ -644,6 +659,20 @@
           {
             "title": "Sign your work",
             "description": "Craftsmen of an earlier age were proud to sign their work. You should be, too"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Spanish food",
+    "cards": [
+      {
+        "image": "https://www.cookingclassy.com/wp-content/uploads/2019/02/quesadillas-2.jpg",
+        "cards": [
+          {
+            "title": "Quesadilla",
+            "description": "Cheese and chicken in a roll, put it in the oven. What's not to love?"
           }
         ]
       }

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Category from "./Category"
 import { defaultShadow, hoverShadow } from "../constants/boxShadow"
+import { primaryColor } from "../constants/color"
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -10,24 +11,17 @@ const Container = styled.div`
 `
 const Button = styled.button`
   border: none;
-  background-color: #2b9bcb;
-  color: #eee;
+  background-color: ${p => (p.selected ? primaryColor : "#eeeeee")};
+  color: ${p => (p.selected ? "#eeeeee" : primaryColor)};
   padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  margin-left: 0;
   font-size: large;
   box-shadow: ${defaultShadow};
-  :active {
-    background-color: #000;
-    color: #ddd;
-    box-shadow: ${defaultShadow};
-  }
   :hover {
     cursor: pointer;
     box-shadow: ${hoverShadow};
   }
-`
-const Label = styled.label`
-  font-size: 18px;
-  font-weight: 400;
 `
 const Heading = styled.h1`
   display: flex;
@@ -38,33 +32,59 @@ const Heading = styled.h1`
 `
 
 const Divider = styled.div`
-  margin: 0.5rem;
+  margin: 0.5rem 0.3rem;
 `
 
+const SelectButton = ({ title, mode, onClick }) => (
+  <Button selected={mode === title} onClick={() => onClick(title)}>
+    {title}
+  </Button>
+)
+
 export default ({ categories }) => {
-  const [isTest, setIsTest] = useState(true)
+  const [mode, setMode] = useState("Test")
   const [selected, setSelected] = useState("")
   return (
     <Container>
       <Heading>
         <Divider>SimplyFlashCards</Divider>{" "}
         <Divider>
-          <Label>{isTest ? "Test" : "Study"}</Label>{" "}
-          <Button onClick={() => setIsTest(!isTest)}>Toggle</Button>
+          <SelectButton
+            title="Study"
+            mode={mode}
+            onClick={mode => setMode(mode)}
+          />
+          <SelectButton
+            title="Memorize"
+            mode={mode}
+            onClick={mode => setMode(mode)}
+          />
+          <SelectButton
+            title="Test"
+            mode={mode}
+            onClick={mode => setMode(mode)}
+          />
+          <SelectButton
+            title="Multi-choice"
+            mode={mode}
+            onClick={mode => setMode(mode)}
+          />
         </Divider>
       </Heading>
       {categories &&
-        categories.map(category => (
-          <>
-            <hr></hr>
-            <Category
-              {...category}
-              isTest={isTest}
-              selected={selected === category.title}
-              onSelect={title => setSelected(title)}
-            />
-          </>
-        ))}
+        categories.map(
+          category =>
+            (selected === category.title || selected === "") && (
+              <>
+                <Category
+                  {...category}
+                  mode={mode}
+                  selected={selected === category.title}
+                  onSelect={title => setSelected(title)}
+                />
+              </>
+            )
+        )}
     </Container>
   )
 }

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import FlashCard from "./FlashCard"
-import StudyCard from "./StudyCard"
+import FlashCard from "./memoryCards/FlashCard"
+import StudyCard from "./studyCards/StudyCard"
 
 const Title = styled.p`
   margin: 0 0.5rem;
   font-weight: 800;
-  font-size: ${p => (27 - p.lvl * 2 > 14 ? 26 - p.lvl * 2 : 14) || 27}px;
+  font-size: ${p => (22 - p.lvl * 2 > 14 ? 22 - p.lvl * 2 : 14) || 27}px;
   ${p =>
     !p.isTest &&
     `
