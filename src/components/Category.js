@@ -31,7 +31,7 @@ export default ({ title, cards, mode, onSelect, selected }) => {
         </Category>
       )}
       {(mode === "Test" || mode === "Multi-choice") && selected && (
-        <RandomCards mode={mode} cards={cards.slice(0, 6)} />
+        <RandomCards mode={mode} cards={cards} />
       )}
       {mode !== "Test" && mode !== "Multi-choice" && selected && (
         <Cards>
