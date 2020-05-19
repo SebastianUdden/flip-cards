@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { primaryColor } from "../../constants/color"
+import { primaryColor } from "../../../constants/color"
 
 const Wrapper = styled.div`
   display: flex;

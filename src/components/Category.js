@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Card } from "./Card"
-import RandomCards from "./testCards/RandomCards"
+import RandomCards from "./randomCards/RandomCards"
 
 const Cards = styled.div`
   display: flex;
@@ -21,26 +21,28 @@ const Category = styled.h2`
   }
 `
 
-export default ({ title, cards, mode, onSelect, selected }) => {
-  return (
-    <>
-      {title && (
-        <Category onClick={() => onSelect(selected ? "" : title)}>
-          <span>{title}</span>
-          <span>{selected ? <>&times;</> : <>&#x2193;</>}</span>
-        </Category>
-      )}
-      {(mode === "Test" || mode === "Multi-choice") && selected && (
-        <RandomCards mode={mode} cards={cards} />
-      )}
-      {mode !== "Test" && mode !== "Multi-choice" && selected && (
-        <Cards>
-          {cards &&
-            cards.map(card => (
-              <Card {...card} isTest={mode === "Memorize"} lvl={1} />
-            ))}
-        </Cards>
-      )}
-    </>
-  )
-}
+export default ({ title, cards, mode, onSelect, selected }) => (
+  <>
+    {title && (
+      <Category onClick={() => onSelect(selected ? "" : title)}>
+        <span>{title}</span>
+        <span>{selected ? <>&times;</> : <>&#x2193;</>}</span>
+      </Category>
+    )}
+    {mode === "Test" && selected && <RandomCards mode={mode} cards={cards} />}
+    {mode === "Multi-choice" && selected && (
+      <RandomCards mode={mode} cards={cards.slice(0, 10)} />
+    )}
+    {mode === "Text" && selected && (
+      <RandomCards mode={mode} cards={cards.slice(0, 10)} />
+    )}
+    {(mode === "Study" || mode === "Memorize") && selected && (
+      <Cards>
+        {cards &&
+          cards.map(card => (
+            <Card {...card} isTest={mode === "Memorize"} lvl={1} />
+          ))}
+      </Cards>
+    )}
+  </>
+)

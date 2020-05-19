@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import FlashCard from "../memoryCards/FlashCard"
+import FlashCard from "../../memoryCards/FlashCard"
 
 const Title = styled.p`
   margin: 0 0.5rem;
