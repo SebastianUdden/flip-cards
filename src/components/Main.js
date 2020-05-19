@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Category from "./Category"
 import { defaultShadow, hoverShadow } from "../constants/boxShadow"
@@ -48,9 +48,12 @@ export const SelectButton = ({ title, mode, width, onClick }) => (
   </Button>
 )
 
-export default ({ categories }) => {
+export default ({ categories, onLoaded }) => {
   const [mode, setMode] = useState("Text")
   const [selected, setSelected] = useState("")
+  useEffect(() => {
+    onLoaded()
+  }, [])
   return (
     <Container>
       <Heading>SimplyFlashCards</Heading>
