@@ -5,6 +5,7 @@ import StudyCard from "./studyCards/StudyCard"
 
 const Title = styled.p`
   margin: 0 0.5rem;
+  padding: 1rem 0;
   font-weight: 800;
   font-size: ${p => (22 - p.lvl * 2 > 14 ? 22 - p.lvl * 2 : 14) || 27}px;
   ${p =>
@@ -16,6 +17,7 @@ const Title = styled.p`
 `
 const Description = styled.p`
   margin: 0 0.5rem;
+  padding: 1rem 0;
   ${p =>
     !p.isTest &&
     `

@@ -6,7 +6,7 @@ import { primaryColor } from "../../constants/color"
 const Common = styled.div`
   position: absolute;
   top: 0;
-  padding: 1rem 0;
+  padding: 0;
   width: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
