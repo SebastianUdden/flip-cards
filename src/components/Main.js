@@ -50,12 +50,14 @@ export const SelectButton = ({ title, mode, width, onClick }) => (
 )
 
 export default ({ categories, onLoaded }) => {
+  const [showContent, setShowContent] = useState(false)
   const [mode, setMode] = useState("Text")
   const [selected, setSelected] = useState("")
   useEffect(() => {
     onLoaded()
+    setShowContent(true)
   }, [])
-  return (
+  return showContent ? (
     <Container>
       <Heading>SimplyFlashCards</Heading>
       <Buttons>
@@ -100,5 +102,7 @@ export default ({ categories, onLoaded }) => {
             )
         )}
     </Container>
+  ) : (
+    ""
   )
 }

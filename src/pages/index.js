@@ -13,7 +13,7 @@ const Preloader = styled.div`
   position: fixed;
   top: 0;
   opacity: ${p => p.opacity};
-  transition: opacity 0.3s linear;
+  transition: opacity 0.5s linear;
   width: 100%;
   z-index: 9999;
 `
@@ -97,7 +97,7 @@ export default () => {
       setOpacity(0.1)
       setTimeout(() => {
         setOpacity(0)
-      }, 300)
+      }, 500)
       //   }, 2000)
     }
   }, [opacity])
