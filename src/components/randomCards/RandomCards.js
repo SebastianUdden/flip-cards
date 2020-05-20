@@ -74,10 +74,12 @@ export default ({ mode, cards }) => {
 
   return (
     <>
-      <Settings
-        difficulty={difficulty}
-        onClick={difficulty => setDifficulty(difficulty)}
-      />
+      {mode !== "Test" && (
+        <Settings
+          difficulty={difficulty}
+          onClick={difficulty => setDifficulty(difficulty)}
+        />
+      )}
       <Overview
         total={cards.length}
         unpicked={unpickedCards.cards.length}

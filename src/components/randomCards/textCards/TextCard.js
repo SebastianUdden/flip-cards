@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { Wrapper, Tries, Image, Title, Button, Check, Cross } from "../ui"
 
@@ -64,6 +64,17 @@ export default textCard => {
     setAnswer("")
   }
 
+  useEffect(() => {
+    document.getElementById("text-input").addEventListener("keydown", e => {
+      if (e.key === "Enter") {
+        e.preventDefault()
+        setCorrect(text.toLowerCase() === correctAnswer.toLowerCase())
+        setAnswer(text)
+        document.getElementById("submit").focus()
+      }
+    })
+  }, [correctAnswer, text])
+
   return (
     <Wrapper>
       {tries && <Tries>Tries: {tries}</Tries>}
@@ -89,12 +100,14 @@ export default textCard => {
         )}
         {!answer && (
           <Textarea
+            id="text-input"
             placeholder="Enter answer..."
             onChange={e => setText(e.target.value)}
           />
         )}
         {!answer && text && (
           <Button
+            id="submit"
             onClick={() => {
               setCorrect(text.toLowerCase() === correctAnswer.toLowerCase())
               setAnswer(text)
