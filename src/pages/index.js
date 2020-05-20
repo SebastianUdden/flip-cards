@@ -12,7 +12,7 @@ const Preloader = styled.div`
   left: 0;
   position: fixed;
   top: 0;
-  opacity: ${p => p.opacity};
+  opacity: ${p => p.opacity || 0};
   transition: opacity 0.5s linear;
   width: 100vw;
   z-index: 9999;
@@ -98,7 +98,7 @@ export default () => {
   const [opacity, setOpacity] = useState(1)
   const [spinnerOpacity, setSpinnerOpacity] = useState(0)
 
-  useEffect(() => setSpinnerOpacity(1), [])
+  useEffect(() => setTimeout(() => setSpinnerOpacity(1), 50), [])
   useEffect(() => {
     if (opacity === 0.1) {
       setOpacity(0.1)
