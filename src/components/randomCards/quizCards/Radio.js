@@ -2,17 +2,20 @@ import React from "react"
 import styled from "styled-components"
 
 const RadioWrapper = styled.div`
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 `
 const RadioInput = styled.input``
 const RadioLabel = styled.label`
   color: ${p => p.color};
+  margin: 0.5rem;
 `
 const Symbol = styled.strong`
   font-size: 25px;
   margin-left: 0.3rem;
-  line-height: 25px;
+  line-height: 10px;
 `
 
 const getColor = (label, selected, correctAnswer) => {

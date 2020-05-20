@@ -20,4 +20,4 @@ export const getRandomCard = cardTypes => {
 }
 
 export const filterCards = (cardType, oldCard) =>
-  cardType.cards.filter(card => card.title !== oldCard.title)
+  cardType.cards.filter(card => card.id !== oldCard.id)

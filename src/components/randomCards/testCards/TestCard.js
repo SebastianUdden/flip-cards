@@ -1,21 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import FlashCard from "../../memoryCards/FlashCard"
+import { CardTitle, CardDescription, CardContainer } from "../../Common"
+import { Tries } from "../ui"
 
-const Title = styled.p`
-  margin: 0 0.5rem;
-  font-weight: 800;
-  font-size: ${p => (22 - p.lvl * 2 > 14 ? 22 - p.lvl * 2 : 14) || 27}px;
-`
-const Description = styled.p`
-  margin: 0 0.5rem;
-`
 const Image = styled.img`
   max-width: 100%;
 `
 
 const Buttons = styled.div`
-  margin: 0.5rem 0;
   display: flex;
   justify-content: space-around;
 `
@@ -37,21 +30,19 @@ const Symbol = styled.strong`
   line-height: 25px;
 `
 
-const Tries = styled.label``
-
 export const TestCard = testCard => {
   const { title, description, image, cards, lvl, tries, handleClick } = testCard
   const formatFlashCardData = () => {
     const front = (
-      <>
+      <CardContainer>
         {image && <Image src={image} alt={image} />}
-        {title && <Title lvl={lvl}>{title}</Title>}
-      </>
+        {title && <CardTitle lvl={lvl}>{title}</CardTitle>}
+      </CardContainer>
     )
     const back = (
-      <>
-        {tries && <Tries>Tries: {tries}</Tries>}
-        <Description>{description}</Description>
+      <CardContainer>
+        {tries && <Tries color="white">Tries: {tries}</Tries>}
+        {description && <CardDescription>{description}</CardDescription>}
         {cards &&
           cards.map(card => (
             <TestCard key={card.title} {...card} lvl={lvl + 1} />
@@ -69,7 +60,7 @@ export const TestCard = testCard => {
             </Button>
           </Buttons>
         )}
-      </>
+      </CardContainer>
     )
     const flashCardData = {
       front,
@@ -77,7 +68,7 @@ export const TestCard = testCard => {
     }
     return (
       <>
-        <FlashCard {...flashCardData} />
+        <FlashCard single {...flashCardData} />
       </>
     )
   }

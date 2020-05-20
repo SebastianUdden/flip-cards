@@ -77,7 +77,7 @@ export default textCard => {
 
   return (
     <Wrapper>
-      {tries && <Tries>Tries: {tries}</Tries>}
+      {tries && <Tries color="#222">Tries: {tries}</Tries>}
       {image && <Image src={image} alt={image} />}
       {title && <Title lvl={lvl}>{title}</Title>}
       <InnerWrapper>

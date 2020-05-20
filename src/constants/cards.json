@@ -1,92 +1,113 @@
 [
   {
+    "id": "Pragmatic Programmer 1-10",
     "title": "Pragmatic Programmer 1-10",
     "cards": [
       {
+        "id": "Tip 1",
         "title": "Tip 1",
         "cards": [
           {
+            "id": "Care about your craft",
             "title": "Care about your craft",
             "description": "Why spend your life developing software unless you care about doing it well?"
           }
         ]
       },
       {
+        "id": "Tip 2",
         "title": "Tip 2",
         "cards": [
           {
+            "id": "THINK! about your work",
             "title": "THINK! about your work",
             "description": "Turn off the autopilot and take control. Constantly critique and appraise your work."
           }
         ]
       },
       {
+        "id": "Tip 3",
         "title": "Tip 3",
         "cards": [
           {
+            "id": "Provide options, not lame excuses",
             "title": "Provide options, not lame excuses",
             "description": "Instead of excuses, provide options. Don't say it can't be done; explain what can be done."
           }
         ]
       },
       {
+        "id": "Tip 4",
         "title": "Tip 4",
         "cards": [
           {
+            "id": "Don't live with broken windows",
             "title": "Don't live with broken windows",
             "description": "Fix bad designs, wrong decisions, and poor code when you see them."
           }
         ]
       },
       {
+        "id": "Tip 5",
         "title": "Tip 5",
         "cards": [
           {
+            "id": "Be a catalyst for change",
             "title": "Be a catalyst for change",
             "description": "You can't force change on people. Instead, show them how the future might be and help them participate in creating it."
           }
         ]
       },
       {
+        "id": "Tip 6",
         "title": "Tip 6",
         "cards": [
           {
+            "id": "Make quality part of your requirements",
             "title": "Make quality part of your requirements",
             "description": "Involve your users in determining the project's real quality requirements."
           }
         ]
       },
       {
+        "id": "Tip 7",
         "title": "Tip 7",
         "cards": [
           {
+            "id": "Remember the big picture",
             "title": "Remember the big picture",
             "description": "Don't get so engrossed in the details that you forget to check what's happening around you."
           }
         ]
       },
       {
+        "id": "Tip 8",
         "title": "Tip 8",
         "cards": [
           {
+            "id": "Invest regularily in your knowledge portfolio",
             "title": "Invest regularily in your knowledge portfolio",
             "description": "Make learning a habit."
           }
         ]
       },
       {
+        "id": "Tip 9",
         "title": "Tip 9",
         "cards": [
           {
+            "id": "Critically analyze what you read and hear",
             "title": "Critically analyze what you read and hear",
             "description": "Don't be swayed by vendors, media hype, or dogma. Analyze information in terms of you and your project."
           }
         ]
       },
       {
+        "id": "Tip 10",
         "title": "Tip 10",
         "cards": [
           {
+            "id": "It's both what you say and the way you say it",
             "title": "It's both what you say and the way you say it",
             "description": "There's no point in having great ideas if you dont communicate them effectively."
           }
@@ -95,93 +116,114 @@
     ]
   },
   {
+    "id": "Pragmatic Programmer 11-20",
     "title": "Pragmatic Programmer 11-20",
     "cards": [
       {
+        "id": "Tip 11",
         "title": "Tip 11",
         "cards": [
           {
+            "id": "DRY - Don't Repeat Yourself",
             "title": "DRY - Don't Repeat Yourself",
             "description": "Every piece of knowledge must have a single, unambiguous, authorative representation within a system."
           }
         ]
       },
       {
+        "id": "Tip 12",
         "title": "Tip 12",
         "cards": [
           {
+            "id": "Make it easy to reuse",
             "title": "Make it easy to reuse",
             "description": "If it's easy to reuse, people will. Create an environment that supports reuse."
           }
         ]
       },
       {
+        "id": "Tip 13",
         "title": "Tip 13",
         "cards": [
           {
+            "id": "Eliminate effects between unrelated things",
             "title": "Eliminate effects between unrelated things",
             "description": "Design components that are self-contained, independent, and have a single, well-defined purpose."
           }
         ]
       },
       {
+        "id": "Tip 14",
         "title": "Tip 14",
         "cards": [
           {
+            "id": "There are no final decisions",
             "title": "There are no final decisions",
             "description": "No decision is cast in stone. Instead, consider each as being written in the sand at the beach, and plan for change."
           }
         ]
       },
       {
+        "id": "Tip 15",
         "title": "Tip 15",
         "cards": [
           {
+            "id": "Use tracer bullets to find the target",
             "title": "Use tracer bullets to find the target",
             "description": "Tracer bullets let you home in on your target by trying things and seeing how close they land."
           }
         ]
       },
       {
+        "id": "Tip 16",
         "title": "Tip 16",
         "cards": [
           {
+            "id": "Prototype to learn",
             "title": "Prototype to learn",
             "description": "Prototyping is a learning experience. Its value lies not in the code you produce, but in the lessons you learn."
           }
         ]
       },
       {
+        "id": "Tip 17",
         "title": "Tip 17",
         "cards": [
           {
+            "id": "Program close to the problem domain",
             "title": "Program close to the problem domain",
             "description": "Design and code in your user's language"
           }
         ]
       },
       {
+        "id": "Tip 18",
         "title": "Tip 18",
         "cards": [
           {
+            "id": "Estimate to avoid surprises",
             "title": "Estimate to avoid surprises",
             "description": "Estimate before you start. You'll spot potential problems up front."
           }
         ]
       },
       {
+        "id": "Tip 19",
         "title": "Tip 19",
         "cards": [
           {
+            "id": "Iterate the schedule with the code",
             "title": "Iterate the schedule with the code",
             "description": "Use experience you gain as you implement to refine the project time scales."
           }
         ]
       },
       {
+        "id": "Tip 20",
         "title": "Tip 20",
         "cards": [
           {
+            "id": "Keep knowledge in plain text",
             "title": "Keep knowledge in plain text",
             "description": "Plain text won't become obsolete. It helps leverage your work and simplifies debugging and testing."
           }
@@ -190,93 +232,114 @@
     ]
   },
   {
+    "id": "Pragmatic Programmer 21-30",
     "title": "Pragmatic Programmer 21-30",
     "cards": [
       {
+        "id": "Tip 21",
         "title": "Tip 21",
         "cards": [
           {
+            "id": "Use the power of command shells",
             "title": "Use the power of command shells",
             "description": "Use the shell when graphical user interfaces don't cut it"
           }
         ]
       },
       {
+        "id": "Tip 22",
         "title": "Tip 22",
         "cards": [
           {
+            "id": "Use the single editor well",
             "title": "Use the single editor well",
             "description": "The editor should be an extension of your hand: make sure your editor is configurable, extensible and programmable."
           }
         ]
       },
       {
+        "id": "Tip 23",
         "title": "Tip 23",
         "cards": [
           {
+            "id": "Always use source control",
             "title": "Always use source control",
             "description": "Source code control is a time machine for your work - you can go back."
           }
         ]
       },
       {
+        "id": "Tip 24",
         "title": "Tip 24",
         "cards": [
           {
+            "id": "Fix the problem, not the blame",
             "title": "Fix the problem, not the blame",
             "description": "It doesn't really matter whether the bug is your fault or someone else's - it's still your problem, and it still needs to be fixed."
           }
         ]
       },
       {
+        "id": "Tip 25",
         "title": "Tip 25",
         "cards": [
           {
+            "id": "Don't panic when debugging",
             "title": "Don't panic when debugging",
             "description": "Take a deep breath and THINK! about what could be causing the bug."
           }
         ]
       },
       {
+        "id": "Tip 26",
         "title": "Tip 26",
         "cards": [
           {
+            "id": "'select' isn't broken",
             "title": "'select' isn't broken",
             "description": "It's rare to find a bug in the OS or the compiler, or even a third-party product or library. The bug is most likely in the application."
           }
         ]
       },
       {
+        "id": "Tip 27",
         "title": "Tip 27",
         "cards": [
           {
+            "id": "Don't assume it - Prove it",
             "title": "Don't assume it - Prove it",
             "description": "Prove your assumptions in the actual environment - with real data and boundary conditions."
           }
         ]
       },
       {
+        "id": "Tip 28",
         "title": "Tip 28",
         "cards": [
           {
+            "id": "Learn a text manipulation language",
             "title": "Learn a text manipulation language",
             "description": "You spend a large part of each day working with text. Why not have the computer do some of it for you."
           }
         ]
       },
       {
+        "id": "Tip 29",
         "title": "Tip 29",
         "cards": [
           {
+            "id": "Write code that writes code",
             "title": "Write code that writes code",
             "description": "Code generators increase your productivity and help avoid duplication."
           }
         ]
       },
       {
+        "id": "Tip 30",
         "title": "Tip 30",
         "cards": [
           {
+            "id": "You can't write perfect software",
             "title": "You can't write perfect software",
             "description": "Software can't be perfect. Protect your code and users from the inevitable errors."
           }
@@ -285,93 +348,114 @@
     ]
   },
   {
+    "id": "Pragmatic Programmer 31-40",
     "title": "Pragmatic Programmer 31-40",
     "cards": [
       {
+        "id": "Tip 31",
         "title": "Tip 31",
         "cards": [
           {
+            "id": "Design with contracts",
             "title": "Design with contracts",
             "description": "Use contracts to document and verify that code does no more and no less than it claims to do."
           }
         ]
       },
       {
+        "id": "Tip 32",
         "title": "Tip 32",
         "cards": [
           {
+            "id": "Crash early",
             "title": "Crash early",
             "description": "A dead program normally does a lot less damage than a crippled one."
           }
         ]
       },
       {
+        "id": "Tip 33",
         "title": "Tip 33",
         "cards": [
           {
+            "id": "Use assertions to prevent the impossible",
             "title": "Use assertions to prevent the impossible",
             "description": "Assertions validate your assumptions. Use them to protect your code from an unceratin world."
           }
         ]
       },
       {
+        "id": "Tip 34",
         "title": "Tip 34",
         "cards": [
           {
+            "id": "Use exceptions for exceptional problems",
             "title": "Use exceptions for exceptional problems",
             "description": "Exceptions can suffer from all the readability and maintainability problems of classic spaghetti code. Reserve exceptions for exceptional things."
           }
         ]
       },
       {
+        "id": "Tip 35",
         "title": "Tip 35",
         "cards": [
           {
+            "id": "Finish what you start",
             "title": "Finish what you start",
             "description": "Where possible, the routine or object that allocates a resource should be responsible for deallocating it."
           }
         ]
       },
       {
+        "id": "Tip 36",
         "title": "Tip 36",
         "cards": [
           {
+            "id": "Minimize coupling between modules",
             "title": "Minimize coupling between modules",
             "description": "Avoid coupling by writing 'shy' code and applying the Law of Demeter."
           }
         ]
       },
       {
+        "id": "Tip 37",
         "title": "Tip 37",
         "cards": [
           {
+            "id": "Configure, don't integrate",
             "title": "Configure, don't integrate",
             "description": "Implement technology choices for an application as configuration options, not through integration or engineering."
           }
         ]
       },
       {
+        "id": "Tip 38",
         "title": "Tip 38",
         "cards": [
           {
+            "id": "Put abstractions in code, details in metadata",
             "title": "Put abstractions in code, details in metadata",
             "description": "Program for the general case, and put the specifics outside the compiled code base."
           }
         ]
       },
       {
+        "id": "Tip 39",
         "title": "Tip 39",
         "cards": [
           {
+            "id": "Analyze workflow to improve concurrency",
             "title": "Analyze workflow to improve concurrency",
             "description": "Exploit concurrency in your user's workflow."
           }
         ]
       },
       {
+        "id": "Tip 40",
         "title": "Tip 40",
         "cards": [
           {
+            "id": "Design using services",
             "title": "Design using services",
             "description": "Design in terms of services - independent, concurrent objects behind well-defined, consistent interfaces."
           }
@@ -380,93 +464,114 @@
     ]
   },
   {
+    "id": "Pragmatic Programmer 41-50",
     "title": "Pragmatic Programmer 41-50",
     "cards": [
       {
+        "id": "Tip 41",
         "title": "Tip 41",
         "cards": [
           {
+            "id": "Always design for concurrency",
             "title": "Always design for concurrency",
             "description": "Allow for concurrency, and you'll design cleaner interfaces with fewer assumptions."
           }
         ]
       },
       {
+        "id": "Tip 42",
         "title": "Tip 42",
         "cards": [
           {
+            "id": "Separate views from models",
             "title": "Separate views from models",
             "description": "Gain flexibility at low cost by designing your application in terms of models and views."
           }
         ]
       },
       {
+        "id": "Tip 43",
         "title": "Tip 43",
         "cards": [
           {
+            "id": "Use blackboards to coordinate workflow",
             "title": "Use blackboards to coordinate workflow",
             "description": "Use blackboards to coordinate disparate facts and agents, while maintaining independence and isolation among participants."
           }
         ]
       },
       {
+        "id": "Tip 44",
         "title": "Tip 44",
         "cards": [
           {
+            "id": "Don't program by coincidence",
             "title": "Don't program by coincidence",
             "description": "Rely only on reliable things. Beware of accidental complexity, and don't confuse a happy coincidence with a purposeful plan."
           }
         ]
       },
       {
+        "id": "Tip 45",
         "title": "Tip 45",
         "cards": [
           {
+            "id": "Estimate the order of your algorithms",
             "title": "Estimate the order of your algorithms",
             "description": "Get a feel for how long things are likely to take before you write code."
           }
         ]
       },
       {
+        "id": "Tip 46",
         "title": "Tip 46",
         "cards": [
           {
+            "id": "Test your estimates",
             "title": "Test your estimates",
             "description": "Mathematical analysis of algorithms doesn't tell you everything. Try timing your code in its target environment."
           }
         ]
       },
       {
+        "id": "Tip 47",
         "title": "Tip 47",
         "cards": [
           {
+            "id": "Refactor early, refactor often",
             "title": "Refactor early, refactor often",
             "description": "Just as you might weed and rearrange a garden; rewrite, rework, and re-architect code when it needs it. Fix the root of the problem."
           }
         ]
       },
       {
+        "id": "Tip 48",
         "title": "Tip 48",
         "cards": [
           {
+            "id": "Design to test",
             "title": "Design to test",
             "description": "Start thinking about testing before you write a line of code."
           }
         ]
       },
       {
+        "id": "Tip 49",
         "title": "Tip 49",
         "cards": [
           {
+            "id": "Test your software, or your users will",
             "title": "Test your software, or your users will",
             "description": "Test ruthlessly. Don't make your users find bugs for you."
           }
         ]
       },
       {
+        "id": "Tip 50",
         "title": "Tip 50",
         "cards": [
           {
+            "id": "Don't use wizard code you don't understand",
             "title": "Don't use wizard code you don't understand",
             "description": "Wizards can generate reams of code. Make sure you understand all of it before you incorporate it into your project."
           }
@@ -475,93 +580,114 @@
     ]
   },
   {
+    "id": "Pragmatic Programmer 51-60",
     "title": "Pragmatic Programmer 51-60",
     "cards": [
       {
+        "id": "Tip 51",
         "title": "Tip 51",
         "cards": [
           {
+            "id": "Don't gather requirements - Dig for them",
             "title": "Don't gather requirements - Dig for them",
             "description": "Requirements rarely lie on the surface. They're buried deep beneath layers of assumptions, misconceptions, and politics."
           }
         ]
       },
       {
+        "id": "Tip 52",
         "title": "Tip 52",
         "cards": [
           {
+            "id": "Work with a user to think like a user",
             "title": "Work with a user to think like a user",
             "description": "It's the best way to gain insight into how the system will really be used."
           }
         ]
       },
       {
+        "id": "Tip 53",
         "title": "Tip 53",
         "cards": [
           {
+            "id": "Abstractions live longer than details",
             "title": "Abstractions live longer than details",
             "description": "Invest in the abstraction, not the implementation. Abstractions can survive the barrage of changes from different implemenations and new technologies."
           }
         ]
       },
       {
+        "id": "Tip 54",
         "title": "Tip 54",
         "cards": [
           {
+            "id": "Use a project glossary",
             "title": "Use a project glossary",
             "description": "Create and maintain a single source of all the specific terms and vocabulary for a project."
           }
         ]
       },
       {
+        "id": "Tip 55",
         "title": "Tip 55",
         "cards": [
           {
+            "id": "Don't think outside the box - Find the box",
             "title": "Don't think outside the box - Find the box",
             "description": "When faced with an impossible problem, identify the real constraints. Ask yourself: 'Does it have to be done this way? Does it have to be done at all?'"
           }
         ]
       },
       {
+        "id": "Tip 56",
         "title": "Tip 56",
         "cards": [
           {
+            "id": "Start when you're ready",
             "title": "Start when you're ready",
             "description": "You've been building experience all your life. Don't ignore niggling doubts."
           }
         ]
       },
       {
+        "id": "Tip 57",
         "title": "Tip 57",
         "cards": [
           {
+            "id": "Some things are better done than described",
             "title": "Some things are better done than described",
             "description": "Don't fall into the specification spiral - At some point you need to start coding."
           }
         ]
       },
       {
+        "id": "Tip 58",
         "title": "Tip 58",
         "cards": [
           {
+            "id": "Don't be a slave to formal methods",
             "title": "Don't be a slave to formal methods",
             "description": "Don't blindly adopt any technique without putting it into the context of your development practices and capabilities."
           }
         ]
       },
       {
+        "id": "Tip 59",
         "title": "Tip 59",
         "cards": [
           {
+            "id": "Costly tools don't produce better design",
             "title": "Costly tools don't produce better design",
             "description": "Beware of vendor hype, industry dogma, and the aura of the price tag. Judge tools on their merits."
           }
         ]
       },
       {
+        "id": "Tip 60",
         "title": "Tip 60",
         "cards": [
           {
+            "id": "Organize teams around functionality",
             "title": "Organize teams around functionality",
             "description": "Don't separate designers from coders, testers from data modelers. Build teams the way you build code."
           }
@@ -570,93 +696,114 @@
     ]
   },
   {
+    "id": "Pragmatic Programmer 61-70",
     "title": "Pragmatic Programmer 61-70",
     "cards": [
       {
+        "id": "Tip 61",
         "title": "Tip 61",
         "cards": [
           {
+            "id": "Don't use manual procedures",
             "title": "Don't use manual procedures",
             "description": "A shell script or batch file will execute the same instructions, in the same order, time after time."
           }
         ]
       },
       {
+        "id": "Tip 62",
         "title": "Tip 62",
         "cards": [
           {
+            "id": "Test early, test often, test automatically",
             "title": "Test early, test often, test automatically",
             "description": "Tests that run with every build are much more effective than test plans that sit on a shelf."
           }
         ]
       },
       {
+        "id": "Tip 63",
         "title": "Tip 63",
         "cards": [
           {
+            "id": "Coding ain't done 'til all the tests are run",
             "title": "Coding ain't done 'til all the tests are run",
             "description": "'Nuff said"
           }
         ]
       },
       {
+        "id": "Tip 64",
         "title": "Tip 64",
         "cards": [
           {
+            "id": "Use saboteurs to test your testing",
             "title": "Use saboteurs to test your testing",
             "description": "Introduce bugs on purpose in a separate copy of the source to verify that testing will catch them."
           }
         ]
       },
       {
+        "id": "Tip 65",
         "title": "Tip 65",
         "cards": [
           {
+            "id": "Test state coverage, not code coverage",
             "title": "Test state coverage, not code coverage",
             "description": "Identify and test significant program states. Just testing lines of code isn't enough."
           }
         ]
       },
       {
+        "id": "Tip 66",
         "title": "Tip 66",
         "cards": [
           {
+            "id": "Find bugs once",
             "title": "Find bugs once",
             "description": "Once a human tester finds a bug. It should be the last time a human tester finds that bug. Automatic tests should check for it from then on."
           }
         ]
       },
       {
+        "id": "Tip 67",
         "title": "Tip 67",
         "cards": [
           {
+            "id": "English is just a programming language",
             "title": "English is just a programming language",
             "description": "Write documents as you would write code: honor the DRY principle, use metadata, MVC, automatic generation, and so on."
           }
         ]
       },
       {
+        "id": "Tip 68",
         "title": "Tip 68",
         "cards": [
           {
+            "id": "Build documentation in, don't bolt it on",
             "title": "Build documentation in, don't bolt it on",
             "description": "Documentation created separately from code is less likely to be correct and up to date."
           }
         ]
       },
       {
+        "id": "Tip 69",
         "title": "Tip 69",
         "cards": [
           {
+            "id": "Gently exceed your users expectations",
             "title": "Gently exceed your users expectations",
             "description": "Come to understand your user's expectations, then deliver just that little bit more."
           }
         ]
       },
       {
+        "id": "Tip 70",
         "title": "Tip 70",
         "cards": [
           {
+            "id": "Sign your work",
             "title": "Sign your work",
             "description": "Craftsmen of an earlier age were proud to sign their work. You should be, too"
           }
@@ -665,14 +812,39 @@
     ]
   },
   {
-    "title": "Spanish food",
+    "id": "Hispanic food",
+    "title": "Hispanic food",
     "cards": [
       {
+        "id": "Quesadilla-image",
         "image": "https://www.cookingclassy.com/wp-content/uploads/2019/02/quesadillas-2.jpg",
         "cards": [
           {
+            "id": "Quesadilla",
             "title": "Quesadilla",
-            "description": "Cheese and chicken in a roll, put it in the oven. What's not to love?"
+            "description": "Cheese and chicken in a bread, then fry it. What's not to love?"
+          }
+        ]
+      },
+      {
+        "id": "Fajita-image",
+        "image": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_167569/cf_259/kycklingfajitas-722693.jpg",
+        "cards": [
+          {
+            "id": "Chicken Fajita",
+            "title": "Chicken fajita",
+            "description": "Cheese and chicken in a roll, but not in the oven. Still amazing!"
+          }
+        ]
+      },
+      {
+        "id": "Paella-image",
+        "image": "https://abasto.com/wp-content/uploads/paella.jpg",
+        "cards": [
+          {
+            "id": "Paella",
+            "title": "Paella",
+            "description": "Rice, vegetables, herbs, beans and seafood."
           }
         ]
       }

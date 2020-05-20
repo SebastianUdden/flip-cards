@@ -1,13 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import FlashCard from "./memoryCards/FlashCard"
 import StudyCard from "./studyCards/StudyCard"
+import { CardTitle, CardDescription, CardContainer } from "./Common"
 
-const Title = styled.p`
-  margin: 0 0.5rem;
-  padding: 1rem 0;
-  font-weight: 800;
-  font-size: ${p => (22 - p.lvl * 2 > 14 ? 22 - p.lvl * 2 : 14) || 27}px;
+const Title = styled(CardTitle)`
   ${p =>
     !p.isTest &&
     `
@@ -15,9 +12,7 @@ const Title = styled.p`
     margin-bottom: 0.3rem;
   `}
 `
-const Description = styled.p`
-  margin: 0 0.5rem;
-  padding: 1rem 0;
+const Description = styled(CardDescription)`
   ${p =>
     !p.isTest &&
     `
@@ -28,31 +23,56 @@ const Image = styled.img`
   max-width: 100%;
 `
 
-export const Card = ({ title, description, image, isTest, cards, lvl }) => {
+export const Card = ({
+  id,
+  title,
+  description,
+  image,
+  isTest,
+  cards,
+  lvl,
+  onFlip,
+}) => {
+  const [toggleMargin, setToggleMargin] = useState(false)
   const formatFlashCardData = () => {
     const front = (
-      <>
+      <CardContainer>
         {image && <Image src={image} alt={image} />}
         {title && (
           <Title isTest={isTest} lvl={lvl}>
             {title}
           </Title>
         )}
-      </>
+      </CardContainer>
     )
     const back = (
-      <>
-        <Description isTest={isTest}>{description}</Description>
+      <CardContainer>
+        {description && (
+          <Description isTest={isTest}>{description}</Description>
+        )}
         {cards &&
-          cards.map(card => <Card {...card} isTest={isTest} lvl={lvl + 1} />)}
-      </>
+          cards.length !== 0 &&
+          cards.map(card => (
+            <Card
+              {...card}
+              isTest={isTest}
+              lvl={lvl + 1}
+              onFlip={() => setToggleMargin(!toggleMargin)}
+            />
+          ))}
+      </CardContainer>
     )
     const flashCardData = {
+      id,
       front,
       back,
     }
     return isTest ? (
-      <FlashCard {...flashCardData} />
+      <FlashCard
+        {...flashCardData}
+        onFlip={() => (onFlip ? onFlip() : setToggleMargin(!toggleMargin))}
+        toggleMargin={toggleMargin}
+      />
     ) : (
       <StudyCard {...flashCardData} lvl={lvl} />
     )

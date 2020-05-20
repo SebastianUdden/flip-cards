@@ -28,9 +28,9 @@ export const Button = styled.button`
   padding: 1rem 2rem;
   font-weight: 700;
 `
-export const Tries = styled.label`
-  margin: 0 0.5rem;
-  color: #222;
+export const Tries = styled.p`
+  margin: 0.5rem 1rem;
+  color: ${p => p.color};
 `
 
 const Symbol = styled.strong`

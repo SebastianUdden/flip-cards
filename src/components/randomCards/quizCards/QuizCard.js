@@ -12,6 +12,7 @@ const getAvailableAnswers = difficulty => {
 
 export const QuizCard = quizCard => {
   const {
+    id,
     title,
     description,
     image,
@@ -26,7 +27,7 @@ export const QuizCard = quizCard => {
   const [answerIndex] = useState(getRandomInt(0, answerArrayLength))
   const [wrongAnswers, setWrongAnswers] = useState(
     otherCards
-      .filter(card => card.title !== title)
+      .filter(card => card.id !== id)
       .sort(() => 0.5 - Math.random())
       .slice(0, answerArrayLength)
   )
@@ -35,6 +36,7 @@ export const QuizCard = quizCard => {
 
   const correctAnswer = {
     correctAnswer: true,
+    id,
     title,
     description,
     cards,
@@ -45,15 +47,19 @@ export const QuizCard = quizCard => {
   useEffect(() => {
     setWrongAnswers(
       otherCards
-        .filter(card => card.title !== title)
+        .filter(card => card.id !== id)
         .sort(() => 0.5 - Math.random())
         .slice(0, answerArrayLength)
     )
+    console.log({ answersArray })
+    console.log({ otherCards })
+    console.log({ wrongAnswers })
+    console.log({ answerArrayLength })
   }, [otherCards, title, tries, answerArrayLength])
 
   return (
     <Wrapper>
-      {tries && <Tries>Tries: {tries}</Tries>}
+      {tries && <Tries color="#222">Tries: {tries}</Tries>}
       {image && <Image src={image} alt={image} />}
       {title && <Title lvl={lvl}>{title}</Title>}
       {answersArray.map(card => (
