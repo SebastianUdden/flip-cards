@@ -99,7 +99,7 @@ export default () => {
   const [opacity, setOpacity] = useState(1)
   const [spinnerOpacity, setSpinnerOpacity] = useState(0)
 
-  useEffect(() => setTimeout(() => setSpinnerOpacity(1), 1000), [])
+  useEffect(() => setSpinnerOpacity(1), [])
   useEffect(() => {
     if (opacity === 0.1) {
       setOpacity(0.1)
@@ -116,10 +116,7 @@ export default () => {
           <Spinner opacity={spinnerOpacity} />
         </Preloader>
       )}
-      <Main
-        categories={CARDS}
-        onLoaded={() => setTimeout(() => setOpacity(0.1), 5000)}
-      />
+      <Main categories={CARDS} onLoaded={() => setOpacity(0.1)} />
     </>
   )
 }
