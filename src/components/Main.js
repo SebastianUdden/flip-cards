@@ -4,6 +4,7 @@ import Category from "./Category"
 import { defaultShadow, smallHoverShadow } from "../constants/boxShadow"
 import { primaryColor } from "../constants/color"
 import DESCRIPTION from "../constants/description.json"
+import logo from "../images/flash-cards.svg"
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -28,7 +29,8 @@ const Button = styled.button`
 const Heading = styled.h1`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  color: #444;
   align-items: center;
   font-size: 25px;
   margin: 0 0.3rem;
@@ -81,7 +83,10 @@ export default ({ categories, onLoaded }) => {
 
   return showContent ? (
     <Container>
-      <Heading>SimplyFlashCards</Heading>
+      <Heading>
+        Simply <img width="100px" src={logo} alt="" />
+        FlashCards
+      </Heading>
       <Buttons>
         <SelectButton title="Study" mode={mode} onClick={handleModeClick} />
         <SelectButton title="Memorize" mode={mode} onClick={handleModeClick} />
