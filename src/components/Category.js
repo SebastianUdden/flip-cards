@@ -31,11 +31,9 @@ export default ({ title, cards, mode, onSelect, selected }) => (
     )}
     {mode === "Test" && selected && <RandomCards mode={mode} cards={cards} />}
     {mode === "Multi-choice" && selected && (
-      <RandomCards mode={mode} cards={cards.slice(0, 10)} />
+      <RandomCards mode={mode} cards={cards} />
     )}
-    {mode === "Text" && selected && (
-      <RandomCards mode={mode} cards={cards.slice(0, 10)} />
-    )}
+    {mode === "Text" && selected && <RandomCards mode={mode} cards={cards} />}
     {(mode === "Study" || mode === "Memorize") && selected && (
       <Cards>
         {cards &&

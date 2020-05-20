@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { primaryColor } from "../../../constants/color"
+import { primaryColor } from "../../constants/color"
 
 const Wrapper = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ const getWord = cards => {
   if (cards > 2) return `all ${cards} cards`
 }
 
-export default ({ onClick, tries, cards }) => {
+export default ({ onClick, tries, cards, difficulty }) => {
   const extraTries = tries - cards
   const goodTry = extraTries < 4
   return (
@@ -31,10 +31,14 @@ export default ({ onClick, tries, cards }) => {
       <p>
         You have answered {getWord(cards)} successfully
         {tries === cards
-          ? " on the first try, you nailed it!"
+          ? ` on the first try, you nailed it${
+              difficulty && ` on ${difficulty} difficulty`
+            }!`
           : `, ${
               goodTry ? "it only took you" : "requiring an additional"
-            } ${extraTries} extra ${extraTries === 1 ? "try" : "tries"}. ${
+            } ${extraTries} extra ${extraTries === 1 ? "try" : "tries"}${
+              difficulty && ` on ${difficulty} difficulty`
+            }. ${
               goodTry ? "Keep up the good work!" : "Better luck next time!"
             }`}
       </p>

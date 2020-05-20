@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { TestCard } from "./testCards/TestCard"
 import { QuizCard } from "./quizCards/QuizCard"
 import Overview from "./Overview"
-import TestComplete from "./testCards/TestComplete"
+import TestComplete from "./TestComplete"
 import { getRandomCard, filterCards } from "./utils"
 import Settings from "./Settings"
 import TextCard from "./textCards/TextCard"
@@ -111,6 +111,7 @@ export default ({ mode, cards }) => {
           tries={tries}
           cards={cards.length}
           onClick={handleReset}
+          difficulty={difficulty}
         />
       )}
     </>
