@@ -106,7 +106,10 @@ export default () => {
           <Spinner />
         </Preloader>
       )}
-      <Main categories={CARDS} onLoaded={() => setOpacity(0.1)} />
+      <Main
+        categories={CARDS}
+        onLoaded={() => setTimeout(() => setOpacity(0.1), 20000)}
+      />
     </>
   )
 }
