@@ -18,15 +18,20 @@ const Preloader = styled.div`
   z-index: 9999;
 `
 
+const SVG = styled.svg`
+  background: 0 0;
+  opacity: ${p => p.opacity};
+  transition: opacity 0.3s linear;
+`
+
 const Spinner = () => (
-  <svg
+  <SVG
     width="200"
     height="200"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
     preserveAspectRatio="xMidYMid"
     class="lds-ripple"
-    style={{ background: "0 0" }}
   >
     <circle
       cx="50"
@@ -86,11 +91,14 @@ const Spinner = () => (
         repeatCount="indefinite"
       />
     </circle>
-  </svg>
+  </SVG>
 )
 
 export default () => {
   const [opacity, setOpacity] = useState(1)
+  const [spinnerOpacity, setSpinnerOpacity] = useState(0)
+
+  useEffect(() => setSpinnerOpacity(1), [])
   useEffect(() => {
     if (opacity === 0.1) {
       setOpacity(0.1)
@@ -99,17 +107,15 @@ export default () => {
       }, 500)
     }
   }, [opacity])
+
   return (
     <>
       {opacity !== 0 && (
         <Preloader opacity={opacity}>
-          <Spinner />
+          <Spinner opacity={spinnerOpacity} />
         </Preloader>
       )}
-      <Main
-        categories={CARDS}
-        onLoaded={() => setTimeout(() => setOpacity(0.1), 20000)}
-      />
+      <Main categories={CARDS} onLoaded={() => setOpacity(0.1)} />
     </>
   )
 }
