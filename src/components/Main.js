@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Category from "./Category"
-import { defaultShadow, hoverShadow } from "../constants/boxShadow"
+import { defaultShadow, smallHoverShadow } from "../constants/boxShadow"
 import { primaryColor } from "../constants/color"
+import DESCRIPTION from "../constants/description.json"
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -21,7 +22,7 @@ const Button = styled.button`
   width: ${p => p.width || "auto"};
   :hover {
     cursor: pointer;
-    box-shadow: ${hoverShadow};
+    box-shadow: ${smallHoverShadow};
   }
 `
 const Heading = styled.h1`
@@ -35,8 +36,21 @@ const Heading = styled.h1`
 
 const Buttons = styled.div`
   padding: 0.5rem 1rem;
+  margin: 0;
   display: flex;
   overflow-x: scroll;
+`
+
+const Description = styled.p`
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: ${primaryColor};
+
+  :hover {
+    box-shadow: ${smallHoverShadow};
+  }
 `
 
 export const SelectButton = ({ title, mode, width, onClick }) => (
@@ -51,42 +65,39 @@ export const SelectButton = ({ title, mode, width, onClick }) => (
 
 export default ({ categories, onLoaded }) => {
   const [showContent, setShowContent] = useState(false)
+  const [showDescription, setShowDescription] = useState(true)
   const [mode, setMode] = useState("Text")
   const [selected, setSelected] = useState("")
+
+  const handleModeClick = mode => {
+    setMode(mode)
+    setShowDescription(true)
+  }
+
   useEffect(() => {
     onLoaded()
     setShowContent(true)
   }, [])
+
   return showContent ? (
     <Container>
       <Heading>SimplyFlashCards</Heading>
       <Buttons>
-        <SelectButton
-          title="Study"
-          mode={mode}
-          onClick={mode => setMode(mode)}
-        />
-        <SelectButton
-          title="Memorize"
-          mode={mode}
-          onClick={mode => setMode(mode)}
-        />
-        <SelectButton
-          title="Test"
-          mode={mode}
-          onClick={mode => setMode(mode)}
-        />
+        <SelectButton title="Study" mode={mode} onClick={handleModeClick} />
+        <SelectButton title="Memorize" mode={mode} onClick={handleModeClick} />
+        <SelectButton title="Test" mode={mode} onClick={handleModeClick} />
         <SelectButton
           title="Multi-choice"
           mode={mode}
-          onClick={mode => setMode(mode)}
+          onClick={handleModeClick}
         />
-        <SelectButton
-          title="Text"
-          mode={mode}
-          onClick={mode => setMode(mode)}
-        />
+        <SelectButton title="Text" mode={mode} onClick={handleModeClick} />
       </Buttons>
+      {showDescription && (
+        <Description onClick={() => setShowDescription(false)}>
+          {DESCRIPTION[mode]}
+        </Description>
+      )}
       {categories &&
         categories.map(
           category =>
