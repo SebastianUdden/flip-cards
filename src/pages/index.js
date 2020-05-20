@@ -95,43 +95,6 @@ const Spinner = ({ opacity }) => (
   </SVG>
 )
 
-// const Cards = () => (
-//   <svg
-//     width="200"
-//     height="200"
-//     xmlns="http://www.w3.org/2000/svg"
-//     viewBox="0 0 100 100"
-//   >
-//     <rect
-//       width="40"
-//       height="60"
-//       fill="#a4d7ec"
-//       stroke="#a4d7ec"
-//       stroke-widht="2"
-//       transform="rotate(12 50 100)
-//     translate(30 15)"
-//     />
-//     <rect
-//       width="40"
-//       height="60"
-//       fill="#ff9288"
-//       stroke="#ff9288"
-//       stroke-widht="2"
-//       transform="rotate(-2 50 100)
-//     translate(30 15)"
-//     />
-//     <rect
-//       width="40"
-//       height="60"
-//       fill="#fffec3"
-//       stroke="#fffec3"
-//       stroke-widht="2"
-//       transform="rotate(-20 50 100)
-//     translate(30 15)"
-//     />
-//   </svg>
-// )
-
 export default () => {
   const [opacity, setOpacity] = useState(1)
   const [spinnerOpacity, setSpinnerOpacity] = useState(0)
