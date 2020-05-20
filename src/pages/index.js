@@ -14,7 +14,7 @@ const Preloader = styled.div`
   top: 0;
   opacity: ${p => p.opacity};
   transition: opacity 0.5s linear;
-  width: 100%;
+  width: 100vw;
   z-index: 9999;
 `
 
@@ -93,12 +93,10 @@ export default () => {
   const [opacity, setOpacity] = useState(1)
   useEffect(() => {
     if (opacity === 0.1) {
-      //   setTimeout(() => {
       setOpacity(0.1)
       setTimeout(() => {
         setOpacity(0)
       }, 500)
-      //   }, 2000)
     }
   }, [opacity])
   return (
