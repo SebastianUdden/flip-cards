@@ -7,6 +7,7 @@ import { primaryColor } from "../constants/color"
 const Container = styled.div`
   margin: 1rem auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
 `
 const Button = styled.button`
   border: none;
