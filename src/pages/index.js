@@ -31,7 +31,6 @@ const Spinner = ({ opacity }) => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
     preserveAspectRatio="xMidYMid"
-    class="lds-ripple"
     opacity={opacity}
   >
     <circle
@@ -40,7 +39,7 @@ const Spinner = ({ opacity }) => (
       r="4.719"
       fill="none"
       stroke="#1d3f72"
-      stroke-width="2"
+      strokeWidth="2"
     >
       <animate
         attributeName="r"
@@ -69,7 +68,7 @@ const Spinner = ({ opacity }) => (
       r="27.591"
       fill="none"
       stroke="#5699d2"
-      stroke-width="2"
+      strokeWidth="2"
     >
       <animate
         attributeName="r"

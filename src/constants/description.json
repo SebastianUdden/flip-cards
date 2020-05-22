@@ -3,5 +3,6 @@
   "Memorize": "Memorize mode means all cards are displayed and the title of each card is visible, click the card to flip it and reveal/hide the answer. This makes it easy to go back and forth and memorize the information.",
   "Test": "Test mode means a random card from the stack is displayed and just as in memorize mode you can flip it to reveal the answer. The difference is that you after you've guessed the answer and flip the card you can correct yourself. After each correction a new random card is displayed until you've answered correctly on all of them.",
   "Multi-choice": "Multi-choice mode means a random card from the stack is displayed and you have to select the correct answer from multiple choices, the amount of options depending on the difficulty level selected and the amount of cards in the stack.",
-  "Text": "Text mode means a random card from the stack is displayed and you have to write the correct answer (while not case sensitive correct spelling is necessary). Easy and Medium difficulty gives you a part of the answer, with some letters at the start and some at the ending of the text to help you out."
+  "Text": "Text mode means a random card from the stack is displayed and you have to write the correct answer (while not case sensitive correct spelling is necessary). Easy and Medium difficulty gives you a part of the answer, with some letters at the start and some at the ending of the text to help you out.",
+  "+": "Creator mode is where you create your own flash-cards and compose new flash-card lists."
 }

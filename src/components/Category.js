@@ -36,10 +36,11 @@ export default ({ title, cards, mode, onSelect, selected }) => (
     {mode === "Text" && selected && <RandomCards mode={mode} cards={cards} />}
     {(mode === "Study" || mode === "Memorize") && selected && (
       <Cards>
-        {cards &&
-          cards.map(card => (
-            <Card {...card} isTest={mode === "Memorize"} lvl={1} />
-          ))}
+        {cards.length
+          ? cards.map(card => (
+              <Card {...card} isTest={mode === "Memorize"} lvl={1} />
+            ))
+          : "This list is empty..."}
       </Cards>
     )}
   </>

@@ -72,7 +72,7 @@ export default ({ mode, cards }) => {
     handleReset()
   }, [difficulty])
 
-  return (
+  return cards.length ? (
     <>
       {mode !== "Test" && (
         <Settings
@@ -115,5 +115,7 @@ export default ({ mode, cards }) => {
         />
       )}
     </>
+  ) : (
+    "No cards available..."
   )
 }

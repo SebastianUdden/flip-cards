@@ -3,10 +3,10 @@ import styled from "styled-components"
 import { defaultShadow } from "../../constants/boxShadow"
 
 const StudyCard = styled.div`
-  padding: 1rem;
   margin: 1rem 0;
   box-shadow: ${defaultShadow};
   background-color: ${p => (p.lvl % 2 === 0 ? "#abbbdb" : "#cdddfd")};
+  width: 100%;
 `
 
 export default ({ front, back, lvl }) => (

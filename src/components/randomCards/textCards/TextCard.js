@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Wrapper, Tries, Image, Title, Button, Check, Cross } from "../ui"
 
 const Textarea = styled.textarea`
-  font-size: 16px;
+  font-size: 18px;
   margin: 0.5rem;
   padding: 1rem;
   width: 87%;
