@@ -43,9 +43,9 @@ const Select = styled.select`
 `
 
 export default ({ categories, onAddCard }) => {
-  const [title, setTitle] = useState("Title")
-  const [image, setImage] = useState("https://picsum.photos/200/300")
-  const [description, setDescription] = useState("Description")
+  const [title, setTitle] = useState("")
+  const [image, setImage] = useState("")
+  const [description, setDescription] = useState("")
   const [selectedCategory, setSelectedCategory] = useState(categories[0])
 
   const handleSubmit = () => {
