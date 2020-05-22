@@ -29,13 +29,6 @@ const Input = styled.input`
   width: 100%;
   padding: 1rem;
 `
-const Textarea = styled.textarea`
-  font-size: 16px;
-  padding: 1rem;
-  width: 100%;
-  border: none;
-  resize: none;
-`
 const Select = styled.select`
   font-size: 16px;
   padding: 1rem;

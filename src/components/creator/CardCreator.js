@@ -32,6 +32,7 @@ const Textarea = styled.textarea`
   width: 100%;
   border: none;
   resize: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `
 const Select = styled.select`
   font-size: 16px;
@@ -55,7 +56,6 @@ export default ({ categories, onAddCard }) => {
       image,
       description,
     }
-    console.log({ card })
     if (title || image) {
       onAddCard({
         ...selectedCategory,

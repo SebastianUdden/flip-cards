@@ -3,12 +3,13 @@ import styled from "styled-components"
 import { Wrapper, Tries, Image, Title, Button, Check, Cross } from "../ui"
 
 const Textarea = styled.textarea`
-  font-size: 18px;
+  font-size: 16px;
   margin: 0.5rem;
   padding: 1rem;
   width: 87%;
   min-height: 50px;
   resize: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `
 
 const Answer = styled.p`
