@@ -51,11 +51,7 @@ export const QuizCard = quizCard => {
         .sort(() => 0.5 - Math.random())
         .slice(0, answerArrayLength)
     )
-    console.log({ answersArray })
-    console.log({ otherCards })
-    console.log({ wrongAnswers })
-    console.log({ answerArrayLength })
-  }, [otherCards, title, tries, answerArrayLength])
+  }, [otherCards, id, tries, answerArrayLength])
 
   return (
     <Wrapper>

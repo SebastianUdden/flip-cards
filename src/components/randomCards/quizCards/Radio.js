@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Check, Cross } from "../ui"
 
 const RadioWrapper = styled.div`
   display: flex;
@@ -11,11 +12,8 @@ const RadioInput = styled.input``
 const RadioLabel = styled.label`
   color: ${p => p.color};
   margin: 0.5rem;
-`
-const Symbol = styled.strong`
-  font-size: 25px;
-  margin-left: 0.3rem;
-  line-height: 10px;
+  display: flex;
+  align-items: center;
 `
 
 const getColor = (label, selected, correctAnswer) => {
@@ -30,10 +28,10 @@ const getColor = (label, selected, correctAnswer) => {
 
 const getSymbol = (label, selected, correctAnswer) => {
   if (selected !== "" && correctAnswer) {
-    return <Symbol>&#x2611;</Symbol>
+    return <Check margin="0 0 0 0.3rem" />
   }
   if (label === selected && !correctAnswer) {
-    return <Symbol>&#x2612;</Symbol>
+    return <Cross margin="0 0 0 0.3rem" />
   }
   return ""
 }

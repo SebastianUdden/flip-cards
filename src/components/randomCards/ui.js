@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { defaultShadow } from "../../constants/boxShadow"
 import { primaryColor } from "../../constants/color"
+import box from "../../images/box.svg"
+import boxChecked from "../../images/box-checked.svg"
+import boxCrossed from "../../images/box-crossed.svg"
 
 export const Wrapper = styled.div`
   margin: 0.5rem 0;
@@ -32,13 +35,13 @@ export const Tries = styled.p`
   margin: 0.5rem 1rem;
   color: ${p => p.color};
 `
-
-const Symbol = styled.strong`
-  font-size: 25px;
-  margin-top: -3px;
-  margin-right: 0.1rem;
-  line-height: 25px;
+const Img = styled.img`
+  margin: ${p => p.margin || "0 0.3rem 0 0"};
 `
-
-export const Check = () => <Symbol>&#x2611;</Symbol>
-export const Cross = () => <Symbol>&#x2612;</Symbol>
+export const Box = ({ margin }) => <Img src={box} alt="box" margin={margin} />
+export const Check = ({ margin }) => (
+  <Img src={boxChecked} alt="box-checked" margin={margin} />
+)
+export const Cross = ({ margin }) => (
+  <Img src={boxCrossed} alt="box-crossed" margin={margin} />
+)

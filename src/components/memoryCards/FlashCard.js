@@ -60,7 +60,7 @@ export default ({ id, front, back, onFlip, toggleMargin, single }) => {
     if (single) return
     const height = document.getElementById(id).offsetHeight
     setMarginBottom(height / 8)
-  }, [onFlip, toggleMargin])
+  }, [id, single, onFlip, toggleMargin])
 
   return (
     <FlashCard
