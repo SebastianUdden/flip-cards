@@ -14,7 +14,7 @@
     "test": "echo \"No tests yet, will be added once out of prototyping phase!\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.21.22",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-manifest": "^2.4.8",
     "gatsby-plugin-offline": "^3.2.6",
     "react": "^16.12.0",
